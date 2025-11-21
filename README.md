@@ -21,26 +21,35 @@
 💡 逻辑简单、代码清晰、易于扩展（可加递归、哈希校验、日志等）
 
 ## 📦 项目结构
+
+```bash
 FileSync/
 │
 ├── filesync.c        # 主程序（C语言）
 ├── README.md         # 项目说明文档
 └── added_files.txt   # 程序运行后生成（记录新增文件）
+```
 
 ## 🚀 如何使用
 1. 编译
+
+```bash
 gcc filesync.c -o filesync
+```
 
 2. 运行
+
+```bash
 ./filesync
+```
 
 3. 输入源目录与目标目录
-
 程序会提示你：
 
+```bash
 Enter source folder: DS
 Enter destination folder: DD
-
+```
 
 随后立即开始文件同步。
 
@@ -88,20 +97,21 @@ ctime 不是创建时间，而是 inode 信息最近修改的时间。
 
 同步过程中可能看到：
 
+```bash
 File: report.doc
 Source ctime: 1700001200
 Target ctime: 1700009999
 Overwrite? (y/n):
-
+```
 
 新增文件清单示例：
 
+```bash
 DS/new_photo.jpg
 DS/new_report.pdf
+```
 
-## 🛠 未来可扩展功能（如果你要做加分项）
-
-你可以在 README 加一个未来计划区，更“工程化”：
+## 🛠 未来预计扩展功能
 
  支持递归同步子目录
 
@@ -117,7 +127,9 @@ DS/new_report.pdf
 
 推荐使用 MIT License：
 
+```bash
 MIT License
+```
 
 ## ❤️ 致谢
 
